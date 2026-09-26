@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>संख्या खेल | Number Play — कक्षा 6 गणित</title>
+<style>
+:root{--ink:#172033;--blue:#2457d6;--sky:#eaf2ff;--mint:#e8f8f0;--gold:#fff4d6;--rose:#fff0f3;--line:#dbe4f0;--paper:#fff;--bg:#f4f7fb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans Devanagari","Nirmala UI",Arial,sans-serif;line-height:1.7}
+.hero{background:linear-gradient(135deg,#173b91,#2b6de7);color:#fff;padding:54px 22px;text-align:center}.hero .tag{display:inline-block;background:#ffffff26;border:1px solid #ffffff55;padding:5px 14px;border-radius:999px}.hero h1{font-size:clamp(2rem,6vw,4rem);margin:12px 0 2px}.hero p{margin:4px auto;max-width:780px}.wrap{max-width:1000px;margin:auto;padding:22px}.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px;margin:18px 0;box-shadow:0 8px 28px #19345a0c}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.tile{padding:17px;border-radius:14px;background:var(--sky);border-left:5px solid var(--blue)}h2{color:#173b91;margin-top:0}h3{color:#244c9a}.en{font-size:.8em;color:#59719d;font-weight:600}.hero .en{color:#dce8ff}.note,.tip,.warn{padding:14px 16px;border-radius:12px;margin:13px 0}.note{background:var(--sky)}.tip{background:var(--mint)}.warn{background:var(--gold)}table{width:100%;border-collapse:collapse;margin:12px 0}th,td{border:1px solid var(--line);padding:10px;text-align:left}th{background:#eef4ff}code,.num{font-family:Consolas,monospace;font-weight:700}.example{border:1px solid #cfe0ff;background:#f8fbff;border-radius:14px;padding:16px;margin:12px 0}.answer{background:#f1f8f4;border-radius:10px;padding:10px 14px;margin-top:8px}.q{padding:10px 0;border-bottom:1px dashed var(--line)}.q:last-child{border:0}details{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:10px 0;background:#fff}summary{cursor:pointer;font-weight:700;color:#244c9a}.visual{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;padding:16px}.badge{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:12px;background:#2457d6;color:white;font:700 23px/1 Arial}.arrow{font-size:28px;color:#2457d6}.footer{text-align:center;color:#66758f;padding:28px}@media print{body{background:#fff}.hero{padding:28px}.card{box-shadow:none;break-inside:avoid}.wrap{padding:0 10px}details .hidden{display:block}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <span class="tag">SAKSHAM CLASSES • कक्षा 6 गणित</span>
+  <h1>संख्या खेल <span class="en">Number Play</span></h1>
+  <p>अध्याय 3 — संख्याओं को पढ़ना, तुलना करना, व्यवस्थित करना और उनके छिपे संबंध पहचानना</p>
+  <p class="en">Independent student-friendly notes aligned to Ganita Prakash (2026–27 sequence)</p>
+</header>
+<main class="wrap">
+  <section class="card">
+    <h2>अध्याय में क्या सीखेंगे? <span class="en">Learning Goals</span></h2>
+    <div class="grid">
+      <div class="tile">संख्याओं की तुलना और क्रम<br><span class="en">Compare and order numbers</span></div>
+      <div class="tile">संख्या रेखा व निकटतम मान<br><span class="en">Number line and estimation</span></div>
+      <div class="tile">अंकों से संख्या बनाना<br><span class="en">Forming numbers with digits</span></div>
+      <div class="tile">राशि बदलने वाले खेल<br><span class="en">Kaprekar-style digit routines</span></div>
+      <div class="tile">पालिंड्रोम संख्याएँ<br><span class="en">Palindromic numbers</span></div>
+      <div class="tile">मानसिक गणना की रणनीतियाँ<br><span class="en">Mental-math strategies</span></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>1. संख्या-बोध <span class="en">Number Sense</span></h2>
+    <p>संख्या-बोध का अर्थ केवल अंक पढ़ना नहीं है। इसका अर्थ है संख्या का आकार समझना, दूसरी संख्या से तुलना करना, लगभग मान बताना और गणना का परिणाम उचित है या नहीं—यह जाँचना।</p>
+    <h3>स्थानीय मान <span class="en">Place Value</span></h3>
+    <p>किसी अंक का मान उसके स्थान पर निर्भर करता है। संख्या <span class="num">58,472</span> में 5 का मान 50,000, 8 का 8,000, 4 का 400, 7 का 70 और 2 का 2 है।</p>
+    <table><tr><th>दस-हजार</th><th>हजार</th><th>सैकड़ा</th><th>दहाई</th><th>इकाई</th></tr><tr><td>5</td><td>8</td><td>4</td><td>7</td><td>2</td></tr></table>
+    <div class="tip"><b>त्वरित जाँच:</b> विस्तारित रूप = 50,000 + 8,000 + 400 + 70 + 2।</div>
+    <h3>तुलना करना <span class="en">Comparing Numbers</span></h3>
+    <ol><li>पहले अंकों की संख्या देखें—अधिक अंकों वाली धनात्मक पूर्ण संख्या बड़ी होती है।</li><li>अंक समान हों तो बाएँ से पहला अलग अंक खोजें। जिसका वह अंक बड़ा, वही संख्या बड़ी।</li></ol>
+    <div class="example"><b>उदाहरण 1:</b> 46,918 और 46,891 में कौन बड़ी है?<div class="answer">दस-हजार, हजार और सैकड़ा समान हैं। दहाई स्थान पर 1 और 9 की तुलना होती है; 9 बड़ा है। इसलिए <b>46,891 &lt; 46,918</b>।</div></div>
+  </section>
+
+  <section class="card">
+    <h2>2. आरोही और अवरोही क्रम <span class="en">Ascending and Descending Order</span></h2>
+    <p><b>आरोही क्रम</b> में छोटी से बड़ी और <b>अवरोही क्रम</b> में बड़ी से छोटी संख्या लिखी जाती है।</p>
+    <div class="visual"><span class="badge">19</span><span class="arrow">→</span><span class="badge">91</span><span class="arrow">→</span><span class="badge">109</span><span class="arrow">→</span><span class="badge">190</span></div>
+    <div class="example"><b>उदाहरण 2:</b> 3,405; 3,450; 3,054; 3,540 को आरोही क्रम में रखें।<div class="answer"><b>3,054 &lt; 3,405 &lt; 3,450 &lt; 3,540</b></div></div>
+  </section>
+
+  <section class="card">
+    <h2>3. संख्या रेखा और निकटतम मान <span class="en">Number Line and Approximation</span></h2>
+    <p>संख्या रेखा पर दाईं ओर जाने से संख्या बढ़ती है। दो चिह्नित संख्याओं के बीच समान अंतराल हों तो हर अंतराल का मान पहले निकालें।</p>
+    <div class="example"><b>उदाहरण 3:</b> 200 और 300 के बीच 10 समान अंतराल हैं। हर अंतराल = (300 − 200) ÷ 10 = 10। पाँचवाँ चिह्न 250 होगा।</div>
+    <h3>निकटतम दहाई/सैकड़ा <span class="en">Rounding</span></h3>
+    <p>निकटतम दहाई के लिए इकाई अंक और निकटतम सैकड़ा के लिए दहाई अंक देखें। 0–4 हो तो नीचे, 5–9 हो तो ऊपर के निकटतम मान पर जाएँ।</p>
+    <table><tr><th>संख्या</th><th>निकटतम दहाई</th><th>निकटतम सैकड़ा</th></tr><tr><td>347</td><td>350</td><td>300</td></tr><tr><td>856</td><td>860</td><td>900</td></tr></table>
+    <div class="warn"><b>ध्यान दें:</b> अनुमान उत्तर की समझ देता है; जहाँ बिल्कुल सही उत्तर चाहिए, वहाँ वास्तविक गणना करें।</div>
+  </section>
+
+  <section class="card">
+    <h2>4. अंकों से संख्याएँ बनाना <span class="en">Forming Numbers from Digits</span></h2>
+    <p>दिए गए अंकों से सबसे बड़ी संख्या बनाने के लिए अंक घटते क्रम में और सबसे छोटी संख्या बनाने के लिए बढ़ते क्रम में रखें। सबसे छोटी संख्या में 0 को आरंभ में नहीं रखा जा सकता।</p>
+    <div class="example"><b>उदाहरण 4:</b> 0, 3, 7, 8 का एक-एक बार उपयोग करें।<div class="answer">सबसे बड़ी संख्या: <b>8730</b><br>सबसे छोटी चार-अंकीय संख्या: पहले सबसे छोटा गैर-शून्य अंक 3, फिर 0, फिर 7, 8 ⇒ <b>3078</b>।</div></div>
+    <h3>अदला-बदली का प्रभाव <span class="en">Effect of Swapping Digits</span></h3>
+    <p>यदि 45 में अंक बदलें तो 54 मिलता है। अंतर 54 − 45 = 9। दो-अंकीय संख्या 10a+b और उलटी संख्या 10b+a का अंतर 9(b−a) होता है; इसलिए ऐसा अंतर 9 का गुणज होता है।</p>
+  </section>
+
+  <section class="card">
+    <h2>5. अंकों का योग और अंक-खेल <span class="en">Digit Sum and Number Routines</span></h2>
+    <p><b>अंक-योग</b> किसी संख्या के सभी अंकों का योग है। जैसे 4,826 का अंक-योग = 4+8+2+6 = 20। जरूरत हो तो फिर 2+0 = 2 तक दोहरा सकते हैं।</p>
+    <div class="example"><b>उदाहरण 5:</b> 3,579 का अंक-योग ज्ञात करें।<div class="answer">3+5+7+9 = <b>24</b>; दोहराने पर 2+4 = <b>6</b>।</div></div>
+    <h3>अंक व्यवस्थित करके घटाना <span class="en">Descending–Ascending Difference</span></h3>
+    <p>किसी चार-अंकीय संख्या के अंकों को घटते और बढ़ते क्रम में लिखकर बड़ी संख्या में से छोटी संख्या घटाएँ। यही प्रक्रिया दोहराने पर रोचक स्थिर परिणाम या चक्र दिखाई दे सकता है।</p>
+    <div class="example"><b>उदाहरण 6:</b> 3524 से शुरू करें।<div class="answer">5432 − 2345 = 3087<br>8730 − 0378 = 8352<br>8532 − 2358 = 6174<br>इसके बाद यही प्रक्रिया 6174 पर वापस आती है।</div></div>
+    <div class="note">यह एक खोज-गतिविधि है। उत्तर रटने से अधिक महत्वपूर्ण है हर चरण सही क्रम में लिखना और देखना कि संख्या कैसे बदलती है।</div>
+  </section>
+
+  <section class="card">
+    <h2>6. उलटी और पालिंड्रोम संख्याएँ <span class="en">Reversal and Palindromes</span></h2>
+    <p>जिस संख्या को बाएँ से दाएँ और दाएँ से बाएँ पढ़ने पर वही संख्या मिले, वह <b>पालिंड्रोम संख्या</b> है—जैसे 121, 5445 और 9009।</p>
+    <div class="example"><b>उदाहरण 7:</b> 263 को उलटकर जोड़ें।<div class="answer">263 + 362 = 625। अब 625 + 526 = <b>1151</b>, जो पालिंड्रोम है।</div></div>
+    <p>हर उदाहरण के लिए चरणों की संख्या समान नहीं होती। प्रत्येक चरण में सभी अंक, आरंभिक शून्य सहित, सावधानी से लिखें।</p>
+  </section>
+
+  <section class="card">
+    <h2>7. मानसिक गणना की रणनीतियाँ <span class="en">Mental-Math Strategies</span></h2>
+    <h3>पूरक बनाना <span class="en">Compensation</span></h3>
+    <div class="example"><b>398 + 276</b><div class="answer">398 को 400 बनाने के लिए 2 जोड़ें: 400+276=676। अतिरिक्त 2 घटाएँ: <b>674</b>।</div></div>
+    <h3>समूह बनाना <span class="en">Grouping</span></h3>
+    <div class="example"><b>25 + 48 + 75 + 52</b><div class="answer">25+75=100 और 48+52=100, इसलिए कुल <b>200</b>।</div></div>
+    <h3>उत्तर का अनुमान <span class="en">Reasonableness Check</span></h3>
+    <p>यदि 487 + 612 का उत्तर 9,099 आया, तो यह असंभव लगता है क्योंकि लगभग 500+600=1,100 होना चाहिए। अनुमान गणना की भूल पकड़ता है।</p>
+  </section>
+
+  <section class="card">
+    <h2>स्वयं जाँचें <span class="en">Quick Check</span></h2>
+    <div class="q">1. 67,509 में 7 का स्थानीय मान क्या है?</div>
+    <div class="q">2. 4,980; 4,908; 4,890 को आरोही क्रम में लिखें।</div>
+    <div class="q">3. 6, 0, 2, 9 से बनने वाली सबसे छोटी चार-अंकीय संख्या लिखें।</div>
+    <div class="q">4. 8,437 का अंक-योग ज्ञात करें।</div>
+    <div class="q">5. क्या 12,321 पालिंड्रोम संख्या है? कारण दें।</div>
+    <details><summary>उत्तर देखें / View Answers</summary><div class="hidden answer">1. 7,000 &nbsp; 2. 4,890; 4,908; 4,980 &nbsp; 3. 2,069 &nbsp; 4. 22 &nbsp; 5. हाँ, दोनों दिशाओं में 12321।</div></details>
+  </section>
+
+  <section class="card">
+    <h2>लघु अभ्यास <span class="en">Short Practice Set</span></h2>
+    <ol>
+      <li>73,406 का विस्तारित रूप लिखिए।</li>
+      <li>59,087 और 59,078 में बड़ी संख्या चुनकर कारण लिखिए।</li>
+      <li>8, 1, 0, 5 से सबसे बड़ी और सबसे छोटी चार-अंकीय संख्या बनाइए।</li>
+      <li>672 को निकटतम दहाई और निकटतम सैकड़ा तक पूर्णांकित कीजिए।</li>
+      <li>7,205 का अंक-योग और दोहराया अंक-योग ज्ञात कीजिए।</li>
+      <li>47 और उसकी उलटी संख्या का अंतर ज्ञात कीजिए। क्या अंतर 9 का गुणज है?</li>
+      <li>381 को उलटकर जोड़िए। क्या पहले चरण में पालिंड्रोम मिलता है?</li>
+      <li>मानसिक विधि से 499+368 ज्ञात कीजिए।</li>
+      <li>एक संख्या 4,000 और 5,000 के ठीक बीच में है। संख्या बताइए।</li>
+      <li>अंक 2, 3, 6, 8 से सबसे बड़ी और सबसे छोटी संख्या बनाकर उनका अंतर ज्ञात कीजिए।</li>
+    </ol>
+    <details><summary>उत्तरमाला / Answer Key</summary><div class="hidden answer">
+      1. 70,000+3,000+400+6 &nbsp; 2. 59,087 (दहाई स्थान पर 8&gt;7) &nbsp; 3. 8,510 और 1,058 &nbsp; 4. 670; 700 &nbsp; 5. 14; फिर 5 &nbsp; 6. 74−47=27, हाँ &nbsp; 7. 381+183=564, नहीं &nbsp; 8. 500+368−1=867 &nbsp; 9. 4,500 &nbsp; 10. 8,632−2,368=6,264
+    </div></details>
+  </section>
+
+  <section class="card">
+    <h2>अध्याय सार <span class="en">Chapter Summary</span></h2>
+    <ul><li>स्थानीय मान संख्या की वास्तविक संरचना समझाता है।</li><li>तुलना बाएँ से पहले अलग अंक द्वारा की जाती है।</li><li>संख्या रेखा क्रम, दूरी और अनुमान को दृश्य बनाती है।</li><li>अंकों की व्यवस्था से सबसे बड़ी/छोटी संख्या और रोचक अंतर बनाए जा सकते हैं।</li><li>अंक-योग, उलटना, पालिंड्रोम और दोहराई गई प्रक्रियाएँ संख्याओं के छिपे संबंध दिखाती हैं।</li><li>मानसिक रणनीति और अनुमान उत्तर की गति तथा शुद्धता दोनों बढ़ाते हैं।</li></ul>
+  </section>
+</main>
+<footer class="footer">Saksham Classes • स्वतंत्र अध्ययन सामग्री • Study → Quick Check → Practice</footer>
+</body></html>
